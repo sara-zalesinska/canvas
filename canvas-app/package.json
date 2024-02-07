@@ -6,9 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js --fix --ignore-path .gitignore",
+    "format": "prettier --ignore-path .gitignore .  --write"
   },
   "devDependencies": {
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "@babel/eslint-parser": "^7.22.15",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3"
   }
 }
