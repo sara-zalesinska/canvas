@@ -4,10 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Canvas</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div id="app">
+      <div class="canvas">
+        <canvas id="draw" width="800" height="800"></canvas>
+    </div>
+    <div class="sliders">
+        <p class="slider-name slider-color">Color</p>
+        <input type="color" id="favcolor" value="#ff0000">
+        <p class="slider-name slider-width">Width</p>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p class="current-width">50</p>
+    </div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
